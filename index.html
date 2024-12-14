@@ -11,27 +11,51 @@
     <h1>My Blog</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="posts.html">Blog Posts</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#blog-list">Home</a></li>
+        <li><a href="#post1">Blog Post 1</a></li>
+        <li><a href="#post2">Blog Post 2</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Blog Posts Section -->
+  <!-- Blog Posts List -->
   <main>
-    <section>
-      <article>
-        <h2><a href="post1.html">Blog Post Title 1</a></h2>
-        <p>This is a short description of Blog Post 1.</p>
-        <time datetime="2024-12-01">December 1, 2024</time>
-      </article>
+    <section id="blog-list">
+      <h2>Blog Posts</h2>
+      <ul>
+        <li><a href="#post1">Blog Post Title 1</a> - December 1, 2024</li>
+        <li><a href="#post2">Blog Post Title 2</a> - December 5, 2024</li>
+      </ul>
+    </section>
 
-      <article>
-        <h2><a href="post2.html">Blog Post Title 2</a></h2>
-        <p>This is a short description of Blog Post 2.</p>
-        <time datetime="2024-12-05">December 5, 2024</time>
-      </article>
+    <!-- Detailed Blog Post Views -->
+    <section id="post1">
+      <h1>Blog Post Title 1</h1>
+      <address>By Author Name</address>
+      <time datetime="2024-12-01">December 1, 2024</time>
+      <p>Welcome to the first blog post! This is the main content of Blog Post 1.</p>
+      <img src="image1.jpg" alt="Description of Image 1">
+      <p>Here are some points covered in this post:</p>
+      <ul>
+        <li>Point 1</li>
+        <li>Point 2</li>
+        <li>Point 3</li>
+      </ul>
+    </section>
+
+    <section id="post2">
+      <h1>Blog Post Title 2</h1>
+      <address>By Author Name</address>
+      <time datetime="2024-12-05">December 5, 2024</time>
+      <p>Welcome to the second blog post! This is the main content of Blog Post 2.</p>
+      <img src="image2.jpg" alt="Description of Image 2">
+      <p>This post discusses:</p>
+      <ol>
+        <li>First topic</li>
+        <li>Second topic</li>
+        <li>Third topic</li>
+      </ol>
     </section>
   </main>
 </body>
