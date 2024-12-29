@@ -10,6 +10,11 @@ body {
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Custom Google Font */
+    line-height: 1.6; /* Improved readability */
+  }
+
 /* Blog post titles */
 h1,
 h2 {
@@ -19,6 +24,19 @@ h2 {
     margin: 1rem 0;
     padding: 0.5rem;
 }
+
+h1, h2 {
+    font-weight: 700; /* Bold font for headings */
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem; /* Standard paragraph size */
+    color: #555;
+    text-align: justify; /* Align text for better reading */
+  }
+  
 
 /* Blog post sections */
 section {
@@ -105,20 +123,5 @@ nav ul li a:hover {
   }
 
   /* Global Typography */
-body {
-    font-family: 'Roboto', Arial, sans-serif; /* Custom Google Font */
-    line-height: 1.6; /* Improved readability */
-  }
-  
-  h1, h2 {
-    font-weight: 700; /* Bold font for headings */
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  p {
-    font-size: 1rem; /* Standard paragraph size */
-    color: #555;
-    text-align: justify; /* Align text for better reading */
-  }
+
   
