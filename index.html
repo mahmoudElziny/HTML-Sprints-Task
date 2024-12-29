@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>My Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,7 +11,7 @@
   <!-- Header and Navigation -->
   <header>
     <h1>My Blog</h1>
-    <nav>
+    <nav class="nav-menu">
       <ul>
         <li><a href="#blog-list">Home</a></li>
         <li><a href="#post1">Blog Post 1</a></li>
@@ -21,8 +22,9 @@
   </header>
 
   <!-- Blog Posts List -->
-  <main>
-    <section id="blog-list">
+  <main class="blog-layout">
+    <!-- Left Column: Blog List -->
+    <section id="blog-list" class="blog-column">
       <h2>Blog Posts</h2>
       <ul>
         <li><a href="#post1">Blog Post Title 1</a> - December 1, 2024</li>
@@ -31,7 +33,7 @@
     </section>
 
     <!-- Detailed Blog Post Views -->
-    <section id="post1">
+    <section id="post1" class="blog-column">
       <h1>Blog Post Title 1</h1>
       <address>By Author Name</address>
       <time datetime="2024-12-01">December 1, 2024</time>
@@ -45,7 +47,7 @@
       </ul>
     </section>
 
-    <section id="post2">
+    <section id="post2" class="blog-column">
       <h1>Blog Post Title 2</h1>
       <address>By Author Name</address>
       <time datetime="2024-12-05">December 5, 2024</time>
@@ -60,7 +62,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section">
+    <section id="contact-section" class="blog-column">
       <h2>Contact Us</h2>
 
       <!-- Contact Form -->
