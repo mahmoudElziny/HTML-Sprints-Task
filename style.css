@@ -11,9 +11,11 @@ body {
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* Custom Google Font */
-    line-height: 1.6; /* Improved readability */
-  }
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Custom Google Font */
+    line-height: 1.6;
+    /* Improved readability */
+}
 
 /* Blog post titles */
 h1,
@@ -25,18 +27,22 @@ h2 {
     padding: 0.5rem;
 }
 
-h1, h2 {
-    font-weight: 700; /* Bold font for headings */
+h1,
+h2 {
+    font-weight: 700;
+    /* Bold font for headings */
     color: #333;
     margin-bottom: 0.5rem;
-  }
-  
-  p {
-    font-size: 1rem; /* Standard paragraph size */
+}
+
+p {
+    font-size: 1rem;
+    /* Standard paragraph size */
     color: #555;
-    text-align: justify; /* Align text for better reading */
-  }
-  
+    text-align: justify;
+    /* Align text for better reading */
+}
+
 
 /* Blog post sections */
 section {
@@ -65,63 +71,178 @@ nav ul li a:hover {
 /* Navigation Menu Flexbox */
 .nav-menu ul {
     display: flex;
-    justify-content: space-around; /* Evenly spaced items */
+    justify-content: space-around;
+    /* Evenly spaced items */
     padding: 0;
     list-style: none;
-    background-color: #333; /* Dark background for navigation */
+    background-color: #333;
+    /* Dark background for navigation */
     color: white;
-  }
-  
-  .nav-menu ul li {
+}
+
+.nav-menu ul li {
     margin: 0;
-  }
-  
-  .nav-menu ul li a {
+}
+
+.nav-menu ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-  }
-  
-  .nav-menu ul li a:hover {
-    background-color: #007BFF; /* Highlight effect */
+}
+
+.nav-menu ul li a:hover {
+    background-color: #007BFF;
+    /* Highlight effect */
     color: white;
     border-radius: 5px;
-  }
-  
-  /* Blog Layout Flexbox */
-  .blog-layout {
+}
+
+/* Blog Layout Flexbox */
+.blog-layout {
     display: flex;
     justify-content: space-between;
-    gap: 2rem; /* Space between columns */
+    gap: 2rem;
+    /* Space between columns */
     margin: 2rem auto;
     max-width: 1200px;
-  }
-  
-  .blog-column {
-    flex: 1; /* Columns take equal width */
-  }
-  
-  #blog-list {
+}
+
+.blog-column {
+    flex: 1;
+    /* Columns take equal width */
+}
+
+#blog-list {
     background-color: #f4f4f9;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  #post1 {
+}
+
+#post1 {
     background-color: #ffffff;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .blog-layout {
-      flex-direction: column; /* Stack columns vertically */
+        flex-direction: column;
+        /* Stack columns vertically */
     }
-  }
+}
 
-  /* Global Typography */
+/* Global Typography */
 
-  
+/* Header and Footer Background */
+header {
+    background-color: #333;
+    /* Dark gray */
+    color: white;
+    /* White text for contrast */
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Navigation Links */
+.nav-menu ul li a {
+    color: #FFD700;
+    /* Gold links for better visibility */
+}
+
+.nav-menu ul li a:hover {
+    color: #FFA500;
+    /* Orange for hover effect */
+}
+
+/* Blog Post Titles and Descriptions */
+h1,
+h2 {
+    color: #444;
+    /* Darker gray for titles */
+}
+
+p,
+ul,
+ol {
+    color: #666;
+    /* Medium gray for descriptions */
+}
+
+/* Homepage Background */
+body {
+    background: linear-gradient(to bottom, #f4f4f9, #ffffff);
+    /* Subtle gradient */
+}
+
+/* Blog Section Background */
+section {
+    background-color: #ffffff;
+    /* White background for content */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+
+/* media queries for responsiveness */
+/* Default Layout (Desktop) */
+.blog-layout {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .blog-layout {
+        flex-direction: column;
+        /* Stack columns vertically */
+        gap: 1rem;
+    }
+
+    /* Adjust Typography for Smaller Screens */
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        /* Slightly smaller headings */
+    }
+
+    p {
+        font-size: 0.9rem;
+        /* Reduce paragraph size */
+        line-height: 1.5;
+        /* Maintain readability */
+    }
+
+    /* Navigation Menu */
+    .nav-menu ul {
+        flex-direction: column;
+        /* Stack navigation links vertically */
+        text-align: center;
+    }
+}
+
+/* Adjustments for Tablets (e.g., 1024px) */
+@media (max-width: 1024px) {
+    .blog-layout {
+        gap: 1.5rem;
+        /* Reduce spacing between columns */
+    }
+
+    h1,
+    h2 {
+        font-size: 1.7rem;
+        /* Slightly smaller headings */
+    }
+}
